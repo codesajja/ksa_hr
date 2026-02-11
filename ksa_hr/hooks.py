@@ -247,3 +247,17 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+doc_events = {
+    "Job Applicant": {
+        "validate": "ksa_hr.job_applicant.validate_job_applicant"
+    }
+}
+
+fixtures = [
+    {
+        "dt": "Employee Onboarding Template",
+        "filters": [
+            ["name", "=", "KSA Recruitment Verification"]
+        ]
+    }
+]
