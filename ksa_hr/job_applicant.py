@@ -17,8 +17,20 @@ def validate_job_applicant(doc, method):
         if not doc.custom_gosi_registration_completed:
             missing.append("GOSI Registration Completed")
 
+        if not doc.custom_passport_copy:
+            missing.append("Passport Copy")
+
+        if not doc.custom_visa_copy:
+            missing.append("Visa Copy")
+
+        if not doc.custom_medical_report:
+            missing.append("Medical Report")
+
+        if not doc.custom_police_clearance_certificate:
+            missing.append("Police Clearance Certificate")
+
         if missing:
             frappe.throw(
                 "The following KSA verifications must be completed before accepting:<br><br>"
-                + ", ".join(missing)
+                + "<b>" + ", ".join(missing) + "</b>"
             )
