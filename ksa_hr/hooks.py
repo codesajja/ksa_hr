@@ -255,9 +255,17 @@ doc_events = {
 
 fixtures = [
     {
-        "dt": "Employee Onboarding Template",
-        "filters": [
-            ["name", "=", "KSA Recruitment Verification"]
-        ]
+        "doctype": "Custom Field",
+        "filters": [["dt", "in", ["Employee", "Job Applicant"]]]
+    },
+    {
+        "doctype": "Employee Onboarding Template",
+        "filters": [["name", "=", "KSA Recruitment Verification"]]
     }
 ]
+
+scheduler_events = {
+    "daily": [
+        "ksa_hr.custom.expiry_alerts.send_expiry_alerts"
+    ]
+}
