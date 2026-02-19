@@ -258,10 +258,7 @@ fixtures = [
         "doctype": "Custom Field",
         "filters": [["dt", "in", ["Employee", "Job Applicant"]]]
     },
-    {
-        "doctype": "Employee Onboarding Template",
-        "filters": [["name", "=", "KSA Recruitment Verification"]]
-    }
+    "Employee Onboarding Template"
 ]
 
 scheduler_events = {

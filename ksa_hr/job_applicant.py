@@ -1,8 +1,9 @@
 import frappe
+from frappe import _
 
 def validate_job_applicant(doc, method):
+    
     if doc.status == "Accepted":
-
         missing = []
 
         if not doc.custom_visa_valid:
@@ -31,6 +32,7 @@ def validate_job_applicant(doc, method):
 
         if missing:
             frappe.throw(
-                "The following KSA verifications must be completed before accepting:<br><br>"
-                + "<b>" + ", ".join(missing) + "</b>"
+                _("The following KSA compliance verifications must be completed before accepting this applicant:<br><br>")
+                + "<b>• " + "<br>• ".join(missing) + "</b>",
+                title=_("KSA Recruitment Compliance Required")
             )

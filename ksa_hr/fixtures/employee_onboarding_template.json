@@ -1,1 +1,113 @@
-[]
+[
+ {
+  "activities": [
+   {
+    "activity_name": "Verify Passport & Visa Documents",
+    "begin_on": 0,
+    "description": null,
+    "duration": 0,
+    "parent": "HR-EMP-ONT-00001",
+    "parentfield": "activities",
+    "parenttype": "Employee Onboarding Template",
+    "required_for_employee_creation": 0,
+    "role": null,
+    "task": null,
+    "task_weight": 0.0,
+    "user": "hr@zinple.com"
+   },
+   {
+    "activity_name": "Complete Medical Examination",
+    "begin_on": 0,
+    "description": null,
+    "duration": 0,
+    "parent": "HR-EMP-ONT-00001",
+    "parentfield": "activities",
+    "parenttype": "Employee Onboarding Template",
+    "required_for_employee_creation": 0,
+    "role": null,
+    "task": null,
+    "task_weight": 0.0,
+    "user": "hr@zinple.com"
+   },
+   {
+    "activity_name": "Obtain Police Clearance Certificate",
+    "begin_on": 0,
+    "description": null,
+    "duration": 0,
+    "parent": "HR-EMP-ONT-00001",
+    "parentfield": "activities",
+    "parenttype": "Employee Onboarding Template",
+    "required_for_employee_creation": 0,
+    "role": null,
+    "task": null,
+    "task_weight": 0.0,
+    "user": "hr@zinple.com"
+   },
+   {
+    "activity_name": "Complete GOSI Registration",
+    "begin_on": 0,
+    "description": null,
+    "duration": 0,
+    "parent": "HR-EMP-ONT-00001",
+    "parentfield": "activities",
+    "parenttype": "Employee Onboarding Template",
+    "required_for_employee_creation": 0,
+    "role": null,
+    "task": null,
+    "task_weight": 0.0,
+    "user": "hr@zinple.com"
+   },
+   {
+    "activity_name": "Upload All Scanned Documents",
+    "begin_on": 0,
+    "description": null,
+    "duration": 0,
+    "parent": "HR-EMP-ONT-00001",
+    "parentfield": "activities",
+    "parenttype": "Employee Onboarding Template",
+    "required_for_employee_creation": 0,
+    "role": null,
+    "task": null,
+    "task_weight": 0.0,
+    "user": "hr@zinple.com"
+   },
+   {
+    "activity_name": "Create Employee Bank Account(WPS)",
+    "begin_on": 0,
+    "description": null,
+    "duration": 0,
+    "parent": "HR-EMP-ONT-00001",
+    "parentfield": "activities",
+    "parenttype": "Employee Onboarding Template",
+    "required_for_employee_creation": 0,
+    "role": null,
+    "task": null,
+    "task_weight": 0.0,
+    "user": "accounts@gmail.com"
+   },
+   {
+    "activity_name": "Assign Work Permit Details",
+    "begin_on": 0,
+    "description": null,
+    "duration": 0,
+    "parent": "HR-EMP-ONT-00001",
+    "parentfield": "activities",
+    "parenttype": "Employee Onboarding Template",
+    "required_for_employee_creation": 0,
+    "role": null,
+    "task": null,
+    "task_weight": 0.0,
+    "user": "hr@zinple.com"
+   }
+  ],
+  "company": "",
+  "department": null,
+  "designation": null,
+  "docstatus": 0,
+  "doctype": "Employee Onboarding Template",
+  "employee_grade": null,
+  "modified": "2026-02-19 10:59:43.708517",
+  "name": "HR-EMP-ONT-00001",
+  "title": "KSA Recruitment Verification"
+ }
+]
