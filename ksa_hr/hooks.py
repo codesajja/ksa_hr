@@ -258,7 +258,9 @@ fixtures = [
         "doctype": "Custom Field",
         "filters": [["dt", "in", ["Employee", "Job Applicant"]]]
     },
-    "Employee Onboarding Template"
+    "Employee Onboarding Template",
+    "Print Format",
+    "Translation"
 ]
 
 scheduler_events = {
