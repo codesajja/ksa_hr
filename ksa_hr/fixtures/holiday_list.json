@@ -1,0 +1,43 @@
+[
+ {
+  "color": null,
+  "country": null,
+  "custom_hijri_date": null,
+  "docstatus": 0,
+  "doctype": "Holiday List",
+  "from_date": "2026-01-01",
+  "holiday_list_name": "KSA Holiday List 2026",
+  "holidays": [
+   {
+    "description": "<div class=\"ql-editor read-mode\"><p> Eid Al-Fitr</p></div>",
+    "holiday_date": "2026-03-21",
+    "parent": "KSA Holiday List 2026",
+    "parentfield": "holidays",
+    "parenttype": "Holiday List",
+    "weekly_off": 0
+   },
+   {
+    "description": "<div class=\"ql-editor read-mode\"><p>Eid Al-Adha</p></div>",
+    "holiday_date": "2026-05-27",
+    "parent": "KSA Holiday List 2026",
+    "parentfield": "holidays",
+    "parenttype": "Holiday List",
+    "weekly_off": 0
+   },
+   {
+    "description": "<div class=\"ql-editor read-mode\"><p>Saudi National Day</p></div>",
+    "holiday_date": "2026-09-23",
+    "parent": "KSA Holiday List 2026",
+    "parentfield": "holidays",
+    "parenttype": "Holiday List",
+    "weekly_off": 0
+   }
+  ],
+  "modified": "2026-02-24 14:08:29.205490",
+  "name": "KSA Holiday List 2026",
+  "subdivision": null,
+  "to_date": "2026-12-31",
+  "total_holidays": 3,
+  "weekly_off": ""
+ }
+]

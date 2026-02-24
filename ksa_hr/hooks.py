@@ -261,8 +261,11 @@ fixtures = [
     {
         "doctype": "Custom Field",
         "filters": [
-            ["dt", "in", ["Employee", "Job Applicant"]]
+            ["dt", "in", ["Employee", "Job Applicant", "Holiday"]]
         ]
+    },
+    {
+        "doctype": "Holiday List"
     },
     {
         "doctype": "Employee Onboarding Template"
