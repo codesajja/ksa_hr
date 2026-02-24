@@ -7,6 +7,9 @@ frappe.ui.form.on('Employee', {
     },
     custom_iqama_expiry: function(frm) {
         check_expiry_alerts(frm);
+    },
+    custom_medical_insurance_expiry: function(frm) {
+        check_expiry_alerts(frm);
     }
 });
 
@@ -16,56 +19,36 @@ function check_expiry_alerts(frm) {
     let messages = [];
     let has_expired = false;
 
-    // ===== VISA CHECK =====
-    if (frm.doc.custom_visa_expiry_date) {
+    // ===== GENERIC CHECK FUNCTION =====
+    function evaluate_expiry(date_value, label) {
+        if (!date_value) return;
 
-        let visa_diff = frappe.datetime.get_diff(
-            frm.doc.custom_visa_expiry_date,
-            today
-        );
+        let diff = frappe.datetime.get_diff(date_value, today);
 
-        if (visa_diff < 0) {
+        if (diff < 0) {
             has_expired = true;
             messages.push(
-                __("⚠ Visa has already expired.")
+                __("⚠ {0} has already expired.", [label])
             );
         } 
-        else if (visa_diff <= 30) {
+        else if (diff <= 30) {
             messages.push(
-                __("⚠ Visa will expire within {0} day(s).", [visa_diff])
+                __("⚠ {0} will expire within {1} day(s).", [label, diff])
             );
         }
     }
 
-    // ===== IQAMA CHECK =====
-    if (frm.doc.custom_iqama_expiry) {
-
-        let iqama_diff = frappe.datetime.get_diff(
-            frm.doc.custom_iqama_expiry,
-            today
-        );
-
-        if (iqama_diff < 0) {
-            has_expired = true;
-            messages.push(
-                __("⚠ Iqama has already expired.")
-            );
-        } 
-        else if (iqama_diff <= 30) {
-            messages.push(
-                __("⚠ Iqama will expire within {0} day(s).", [iqama_diff])
-            );
-        }
-    }
+    // ===== CHECK ALL DOCUMENTS =====
+    evaluate_expiry(frm.doc.custom_visa_expiry_date, "Visa");
+    evaluate_expiry(frm.doc.custom_iqama_expiry, "Iqama");
+    evaluate_expiry(frm.doc.custom_medical_insurance_expiry, "Medical Insurance");
 
     // ===== SHOW SINGLE POPUP =====
     if (messages.length > 0) {
-
         frappe.msgprint({
             title: __("Document Expiry Alert"),
             message: messages.join("<br><br>"),
             indicator: has_expired ? "red" : "orange"
         });
-
     }
 }
