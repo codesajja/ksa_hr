@@ -253,18 +253,24 @@ doc_events = {
     }
 }
 
+doctype_js = {
+    "Employee": "public/js/employee.js"
+}
+
 fixtures = [
     {
         "doctype": "Custom Field",
-        "filters": [["dt", "in", ["Employee", "Job Applicant"]]]
+        "filters": [
+            ["dt", "in", ["Employee", "Job Applicant"]]
+        ]
     },
-    "Employee Onboarding Template",
-    "Print Format",
-    "Translation"
+    {
+        "doctype": "Employee Onboarding Template"
+    },
+    {
+        "doctype": "Print Format"
+    },
+    {
+        "doctype": "Translation"
+    }
 ]
-
-scheduler_events = {
-    "daily": [
-        "ksa_hr.custom.expiry_alerts.send_expiry_alerts"
-    ]
-}
