@@ -268,6 +268,12 @@ fixtures = [
         "doctype": "Holiday List"
     },
     {
+        "doctype": "DocPerm",
+        "filters": [
+            ["parent", "=", "File"]
+        ]
+    },
+    {
         "doctype": "Employee Onboarding Template"
     },
     {
