@@ -250,6 +250,10 @@ app_license = "mit"
 doc_events = {
     "Job Applicant": {
         "validate": "ksa_hr.job_applicant.validate_job_applicant"
+    },
+    "Employee": {
+        "after_insert": "ksa_hr.employee_folder.create_employee_folder",
+        "on_update": "ksa_hr.employee_folder.move_employee_attachments"
     }
 }
 

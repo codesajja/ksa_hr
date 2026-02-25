@@ -1,6 +1,14 @@
 frappe.ui.form.on('Employee', {
     refresh: function(frm) {
         check_expiry_alerts(frm);
+
+        // Route attachments to employee's folder
+        if (frm.doc.name && frm.doc.employee_name) {
+            frm.attachments.attachment_control.options = {
+                folder: `Home/Employee Documents/${frm.doc.name} - ${frm.doc.employee_name}`,
+                restrictions: {}
+            };
+        }
     },
     custom_visa_expiry_date: function(frm) {
         check_expiry_alerts(frm);
