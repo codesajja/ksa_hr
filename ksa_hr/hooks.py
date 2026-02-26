@@ -258,14 +258,16 @@ doc_events = {
 }
 
 doctype_js = {
-    "Employee": "public/js/employee.js"
+    "Employee": "public/js/employee.js",
+        "Appraisal": "public/js/appraisal_reminder.js"
+
 }
 
 fixtures = [
     {
         "doctype": "Custom Field",
         "filters": [
-            ["dt", "in", ["Employee", "Job Applicant", "Holiday"]]
+            ["dt", "in", ["Employee", "Job Applicant", "Holiday", "Appraisal"]]
         ]
     },
     {
@@ -286,8 +288,6 @@ fixtures = [
     {
         "doctype": "Translation"
     },
-
-
     {
         "doctype": "Workflow"
     },
