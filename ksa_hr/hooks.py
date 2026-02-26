@@ -285,5 +285,28 @@ fixtures = [
     },
     {
         "doctype": "Translation"
+    },
+
+
+    {
+        "doctype": "Workflow"
+    },
+    {
+        "doctype": "Workflow State"
+    },
+    {
+        "doctype": "Workflow Action"
+    },
+    {
+        "doctype": "DocType",
+        "filters": [
+            ["name", "=", "Employee Loan"]
+        ]
+    },
+    {
+        "doctype": "Salary Component",
+        "filters": [
+            ["name", "=", "Loan Repayment"]
+        ]
     }
 ]
