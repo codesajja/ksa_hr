@@ -1,23 +1,23 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-02-27 10:46:09.693640",
+ "creation": "2026-02-27 15:07:25.693237",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_i0ct",
+  "section_break_ifwj",
   "amended_from",
   "employee",
   "monthly_installment",
   "status",
-  "column_break_ywdy",
+  "column_break_lbyn",
   "loan_amount",
   "repayment_start_date",
   "salary_component"
  ],
  "fields": [
   {
-   "fieldname": "section_break_i0ct",
+   "fieldname": "section_break_ifwj",
    "fieldtype": "Section Break"
   },
   {
@@ -48,7 +48,7 @@
    "options": "\nDraft\nPending\nApproved\nRejected"
   },
   {
-   "fieldname": "column_break_ywdy",
+   "fieldname": "column_break_lbyn",
    "fieldtype": "Column Break"
   },
   {
@@ -72,7 +72,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-27 12:25:28.150688",
+ "modified": "2026-02-27 15:09:45.824554",
  "modified_by": "Administrator",
  "module": "KSA HR",
  "name": "Employee Loan",

@@ -300,12 +300,7 @@ fixtures = [
     {
         "doctype": "Workflow Action"
     },
-    {
-        "doctype": "DocType",
-        "filters": [
-            ["name", "=", "Employee Loan"]
-        ]
-    },
+    
     {
         "doctype": "Salary Component",
         "filters": [
