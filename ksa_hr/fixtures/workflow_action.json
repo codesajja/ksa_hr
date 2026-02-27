@@ -397,5 +397,47 @@
   "status": "Completed",
   "user": null,
   "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-27 16:06:38.271824",
+  "name": "18uq564ocs",
+  "permitted_roles": [
+   {
+    "parent": "18uq564ocs",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "18uve6fiug",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-27 16:06:40.078904",
+  "name": "19gibaib90",
+  "permitted_roles": [
+   {
+    "parent": "19gibaib90",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "18uve6fiug",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending"
  }
 ]
