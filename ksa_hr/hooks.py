@@ -254,6 +254,9 @@ doc_events = {
     "Employee": {
         "after_insert": "ksa_hr.employee_folder.create_employee_folder",
         "on_update": "ksa_hr.employee_folder.move_employee_attachments"
+    },
+    "Timesheet": {
+        "before_save": "ksa_hr.timesheet_overtime.calculate_overtime"
     }
 }
 
