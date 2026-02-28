@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2026-02-28 10:33:51.959345",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,11 +10,13 @@
   "employee",
   "monthly_installment",
   "status",
+  "naming_series",
   "column_break_dipx",
   "loan_amount",
   "repayment_start_date",
   "salary_component",
-  "loan_type"
+  "loan_type",
+  "amended_from"
  ],
  "fields": [
   {
@@ -62,13 +65,30 @@
    "fieldtype": "Link",
    "label": "Loan Type",
    "options": "Loan Type"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "EL-.#####"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Loan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-28 10:37:13.734114",
+ "modified": "2026-02-28 11:34:18.270852",
  "modified_by": "Administrator",
  "module": "KSA HR",
  "name": "Employee Loan",

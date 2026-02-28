@@ -481,5 +481,26 @@
   "status": "Open",
   "user": null,
   "workflow_state": "Pending"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 11:34:35.307329",
+  "name": "dk11uobkgb",
+  "permitted_roles": [
+   {
+    "parent": "dk11uobkgb",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00001",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Draft"
  }
 ]
