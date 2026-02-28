@@ -270,7 +270,7 @@ fixtures = [
     {
         "doctype": "Custom Field",
         "filters": [
-            ["dt", "in", ["Employee", "Job Applicant", "Holiday", "Appraisal"]]
+            ["dt", "in", ["Employee", "Job Applicant", "Holiday"]]
         ]
     },
     {
@@ -304,6 +304,12 @@ fixtures = [
         "doctype": "DocType",
         "filters": [
             ["name", "=", "Employee Loan"]
+        ]
+    },
+    {
+        "doctype": "DocType",
+        "filters": [
+            ["name", "=", "Loan Type"]
         ]
     },
     {
