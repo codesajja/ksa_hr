@@ -257,6 +257,9 @@ doc_events = {
     },
     "Timesheet": {
         "before_save": "ksa_hr.timesheet_overtime.calculate_overtime"
+    },
+    "Employee Loan": {
+        "on_submit": "ksa_hr.ksa_hr.doctype.employee_loan.employee_loan.on_submit"
     }
 }
 
@@ -316,6 +319,12 @@ fixtures = [
         "doctype": "Salary Component",
         "filters": [
             ["name", "=", "Loan Repayment"]
+        ]
+    },
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["dt", "=", "Additional Salary"]
         ]
     }
 ]

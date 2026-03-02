@@ -4,6 +4,678 @@
   "completed_by_role": "Employee",
   "docstatus": 0,
   "doctype": "Workflow Action",
+  "modified": "2026-02-28 12:46:11.498634",
+  "name": "nijnv646th",
+  "permitted_roles": [
+   {
+    "parent": "nijnv646th",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 12:46:14.598890",
+  "name": "nji10dfqn6",
+  "permitted_roles": [
+   {
+    "parent": "nji10dfqn6",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00002",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 13:16:09.595501",
+  "name": "94gl276tjs",
+  "permitted_roles": [
+   {
+    "parent": "94gl276tjs",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00003",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 13:57:51.475885",
+  "name": "1ia3fe16lm",
+  "permitted_roles": [
+   {
+    "parent": "1ia3fe16lm",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00004",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 13:57:53.819954",
+  "name": "1j2h7d7b51",
+  "permitted_roles": [
+   {
+    "parent": "1j2h7d7b51",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00004",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 15:54:53.007366",
+  "name": "64if1fct15",
+  "permitted_roles": [
+   {
+    "parent": "64if1fct15",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00005",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 15:55:13.267953",
+  "name": "6as2u827r2",
+  "permitted_roles": [
+   {
+    "parent": "6as2u827r2",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00006",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 15:55:14.832248",
+  "name": "6bc0mb6ga1",
+  "permitted_roles": [
+   {
+    "parent": "6bc0mb6ga1",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00006",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 15:58:56.220722",
+  "name": "8giv5olenq",
+  "permitted_roles": [
+   {
+    "parent": "8giv5olenq",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00007",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 15:58:58.804871",
+  "name": "8hct8dc1ae",
+  "permitted_roles": [
+   {
+    "parent": "8hct8dc1ae",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00007",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:14:14.314777",
+  "name": "hffdajqokq",
+  "permitted_roles": [
+   {
+    "parent": "hffdajqokq",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00008",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:14:17.013246",
+  "name": "hga2127lcv",
+  "permitted_roles": [
+   {
+    "parent": "hga2127lcv",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00008",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:20:06.123522",
+  "name": "ktd796ktii",
+  "permitted_roles": [
+   {
+    "parent": "ktd796ktii",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00009",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:20:08.384147",
+  "name": "ku3g5mke93",
+  "permitted_roles": [
+   {
+    "parent": "ku3g5mke93",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00009",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:22:40.485594",
+  "name": "mdkt100mm4",
+  "permitted_roles": [
+   {
+    "parent": "mdkt100mm4",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00010",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:22:42.778680",
+  "name": "meboc80on3",
+  "permitted_roles": [
+   {
+    "parent": "meboc80on3",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00010",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:42:23.204792",
+  "name": "1v8erns9u0",
+  "permitted_roles": [
+   {
+    "parent": "1v8erns9u0",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00011",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:42:24.897014",
+  "name": "1vpsp0aicg",
+  "permitted_roles": [
+   {
+    "parent": "1vpsp0aicg",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00011",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:48:16.965069",
+  "name": "5dpg953una",
+  "permitted_roles": [
+   {
+    "parent": "5dpg953una",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00012",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:48:19.013098",
+  "name": "5ee2asgqfo",
+  "permitted_roles": [
+   {
+    "parent": "5ee2asgqfo",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00012",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:57:47.573142",
+  "name": "b03l12bnbb",
+  "permitted_roles": [
+   {
+    "parent": "b03l12bnbb",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00013",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 16:57:49.523141",
+  "name": "b0namv3hq1",
+  "permitted_roles": [
+   {
+    "parent": "b0namv3hq1",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00013",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:29:33.297435",
+  "name": "tjlgjjjugs",
+  "permitted_roles": [
+   {
+    "parent": "tjlgjjjugs",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00014",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:29:34.589115",
+  "name": "tk1k7unqok",
+  "permitted_roles": [
+   {
+    "parent": "tk1k7unqok",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00014",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:34:38.630388",
+  "name": "0j25cg51jk",
+  "permitted_roles": [
+   {
+    "parent": "0j25cg51jk",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00015",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:34:40.657004",
+  "name": "0jmam9n7jd",
+  "permitted_roles": [
+   {
+    "parent": "0jmam9n7jd",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00015",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:37:59.360503",
+  "name": "2hp4s2i5j6",
+  "permitted_roles": [
+   {
+    "parent": "2hp4s2i5j6",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00016",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:38:00.847928",
+  "name": "2i8nsemomg",
+  "permitted_roles": [
+   {
+    "parent": "2i8nsemomg",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00016",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:39:22.689711",
+  "name": "3bq129jdof",
+  "permitted_roles": [
+   {
+    "parent": "3bq129jdof",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00017",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:39:23.839255",
+  "name": "3c6rbs38mj",
+  "permitted_roles": [
+   {
+    "parent": "3c6rbs38mj",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00017",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:42:11.739416",
+  "name": "50l0lk8elj",
+  "permitted_roles": [
+   {
+    "parent": "50l0lk8elj",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00018",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:42:12.970648",
+  "name": "511h8vsb82",
+  "permitted_roles": [
+   {
+    "parent": "511h8vsb82",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00018",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
   "modified": "2026-02-28 10:17:40.860703",
   "name": "0i0dgo67al",
   "permitted_roles": [
@@ -502,5 +1174,173 @@
   "status": "Open",
   "user": null,
   "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:45:34.707956",
+  "name": "703juqn8g8",
+  "permitted_roles": [
+   {
+    "parent": "703juqn8g8",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00019",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:45:36.359493",
+  "name": "70jqltr1s5",
+  "permitted_roles": [
+   {
+    "parent": "70jqltr1s5",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00019",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:48:48.566128",
+  "name": "8sl23dckuj",
+  "permitted_roles": [
+   {
+    "parent": "8sl23dckuj",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00020",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-02-28 17:48:50.126269",
+  "name": "8t5onvjdgp",
+  "permitted_roles": [
+   {
+    "parent": "8t5onvjdgp",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00020",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-03-02 09:49:10.559451",
+  "name": "7bh6qh1jvg",
+  "permitted_roles": [
+   {
+    "parent": "7bh6qh1jvg",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00021",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-03-02 09:49:29.423866",
+  "name": "7he0ja25e0",
+  "permitted_roles": [
+   {
+    "parent": "7he0ja25e0",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00021",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-03-02 09:51:00.496515",
+  "name": "8dt5bdl4ro",
+  "permitted_roles": [
+   {
+    "parent": "8dt5bdl4ro",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00022",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-03-02 09:51:01.787553",
+  "name": "8e98385ud1",
+  "permitted_roles": [
+   {
+    "parent": "8e98385ud1",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00022",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
  }
 ]
