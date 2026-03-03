@@ -4,6 +4,48 @@
   "completed_by_role": "Employee",
   "docstatus": 0,
   "doctype": "Workflow Action",
+  "modified": "2026-03-02 15:28:10.937327",
+  "name": "dvtduo4ul8",
+  "permitted_roles": [
+   {
+    "parent": "dvtduo4ul8",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "Employee"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00023",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "HR User",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-03-02 15:28:12.808428",
+  "name": "e0gs54bnn5",
+  "permitted_roles": [
+   {
+    "parent": "e0gs54bnn5",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "HR User"
+   }
+  ],
+  "reference_doctype": "Employee Loan",
+  "reference_name": "EL-00023",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Pending"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "Employee",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
   "modified": "2026-02-28 12:46:11.498634",
   "name": "nijnv646th",
   "permitted_roles": [

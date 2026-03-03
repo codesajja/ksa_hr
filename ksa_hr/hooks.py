@@ -260,7 +260,11 @@ doc_events = {
     },
     "Employee Loan": {
         "on_submit": "ksa_hr.ksa_hr.doctype.employee_loan.employee_loan.on_submit"
+    },
+    "Salary Slip": {
+        "before_save": "ksa_hr.gosi.calculate_gosi"
     }
+    
 }
 
 doctype_js = {
@@ -325,6 +329,18 @@ fixtures = [
         "doctype": "Custom Field",
         "filters": [
             ["dt", "=", "Additional Salary"]
+        ]
+    },
+    {
+        "doctype": "Salary Component",
+        "filters": [
+            ["name", "in", ["GOSI - Employee", "GOSI - Employer"]]
+        ]
+    },
+    {
+        "doctype": "Print Format",
+        "filters": [
+            ["name", "=", "Salary Slip – KSA Bilingual"]
         ]
     }
 ]
