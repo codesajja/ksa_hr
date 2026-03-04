@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-11 10:13:24.973089",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "contract_type",
+  "start_date",
+  "end_date",
+  "probation_period",
+  "probation_end_date",
+  "renewal_reminder_days",
+  "renewal_due_date",
+  "signed_contract",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Contract Type",
+   "options": "\nFixed\nIndefinite",
+   "reqd": 1
+  },
+  {
+   "fieldname": "probation_period",
+   "fieldtype": "Int",
+   "label": "Probation Period"
+  },
+  {
+   "fieldname": "probation_end_date",
+   "fieldtype": "Date",
+   "label": "Probation End Date"
+  },
+  {
+   "fieldname": "renewal_reminder_days",
+   "fieldtype": "Int",
+   "label": "Renewal Reminder Days"
+  },
+  {
+   "fieldname": "renewal_due_date",
+   "fieldtype": "Date",
+   "label": "Renewal Due Date"
+  },
+  {
+   "fieldname": "signed_contract",
+   "fieldtype": "Attach",
+   "label": "Signed Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employment Contract",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-11 13:46:29.908491",
+ "modified_by": "Administrator",
+ "module": "Zinple",
+ "name": "Employment Contract",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

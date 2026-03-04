@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-07 13:54:05.204681",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jiez",
+  "employee",
+  "date_of_joining",
+  "last_working_date",
+  "basic_salary",
+  "column_break_slkc",
+  "years_of_service",
+  "eos_amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jiez",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of joining",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_working_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Last Working Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Basic Salary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_slkc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "years_of_service",
+   "fieldtype": "Float",
+   "label": "Years of Service",
+   "read_only": 1
+  },
+  {
+   "fieldname": "eos_amount",
+   "fieldtype": "Currency",
+   "label": "EOS Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "End of Service Settlement",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-07 22:42:49.237280",
+ "modified_by": "Administrator",
+ "module": "Zinple",
+ "name": "End of Service Settlement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -11,17 +11,12 @@ def calculate_gosi(doc, method):
     if not nationality:
         return
 
-    # Get Basic salary from earnings
-    base_salary = 0
-    for row in doc.earnings:
-        if row.salary_component == "Basic":
-            base_salary = row.amount
-            break
+    # GOSI based on total earnings
+    base_salary = sum(row.amount for row in doc.earnings)
 
     if base_salary == 0:
         return
 
-    # Calculate GOSI
     if nationality == "Saudi":
         gosi_employee = base_salary * 0.10
         gosi_employer = base_salary * 0.12
@@ -29,7 +24,6 @@ def calculate_gosi(doc, method):
         gosi_employee = 0
         gosi_employer = base_salary * 0.02
 
-    # Ensure deduction rows exist
     deduction_map = {d.salary_component: d for d in doc.deductions}
 
     if "GOSI - Employee" not in deduction_map:

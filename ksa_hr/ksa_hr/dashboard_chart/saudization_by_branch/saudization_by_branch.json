@@ -1,0 +1,34 @@
+{
+ "chart_name": "Saudization by Branch",
+ "chart_type": "Report",
+ "creation": "2026-02-25 16:07:58.935957",
+ "currency": "INR",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2026-02-25 16:07:58.935957",
+ "modified_by": "Administrator",
+ "module": "Zinple",
+ "name": "Saudization by Branch",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Saudization Report",
+ "roles": [],
+ "show_values_over_chart": 0,
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "branch",
+ "y_axis": [
+  {
+   "y_field": "saudization_percentage"
+  }
+ ]
+}

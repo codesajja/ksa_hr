@@ -261,8 +261,11 @@ doc_events = {
     "Employee Loan": {
         "on_submit": "ksa_hr.ksa_hr.doctype.employee_loan.employee_loan.on_submit"
     },
-    "Salary Slip": {
-        "before_save": "ksa_hr.gosi.calculate_gosi"
+    # "Salary Slip": {
+    #     "before_save": "ksa_hr.gosi.calculate_gosi"
+    # },
+    "Appraisal": {
+        "on_submit": "ksa_hr.increment_link.apply_increment_on_submit"
     }
     
 }
@@ -274,6 +277,34 @@ doctype_js = {
 }
 
 fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["fieldname", "in", [
+                # Employee Fields
+                "custom_ghosi_basic_salary",
+                "custom_ghosi_housing_allowance",
+                "custom_ghosi_other_allowance",
+                "custom_gosi_basic_salary",
+                "custom_gosi_housing_allowance",
+                "custom_gosi_other_allowance",
+                "custom_vacation_salary",
+                "custom_nationality_type",
+
+                # Salary Structure Assignment Fields
+                "custom_gosi",
+                "custom_gosi_amount",
+
+                # Attendance Fields
+                "custom_standard_hours",
+                "custom_overtime_hours",
+                "custom_is_ramadan",
+
+                # Timesheet OT Fields
+                "custom_total_ot_hours"
+            ]]
+        ]
+    },
     {
         "doctype": "Custom Field",
         "filters": [

@@ -29,7 +29,6 @@ def move_employee_attachments(doc, method=None):
     """Moves any attached files to the employee's folder"""
     target_folder = f"Home/Employee Documents/{doc.name} - {doc.employee_name}"
 
-    # Get ALL files attached to this employee regardless of field
     files = frappe.get_all("File", filters={
         "attached_to_doctype": "Employee",
         "attached_to_name": doc.name

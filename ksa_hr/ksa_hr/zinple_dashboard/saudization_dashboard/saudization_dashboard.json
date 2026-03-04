@@ -1,0 +1,29 @@
+{
+ "cards": [
+  {
+   "card": "Overall Saudization %"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Saudization by Department",
+   "width": "Full"
+  },
+  {
+   "chart": "Saudization by Branch",
+   "width": "Full"
+  }
+ ],
+ "creation": "2026-02-25 15:45:11.502960",
+ "dashboard_name": "Saudization Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2026-02-25 16:08:49.003280",
+ "modified_by": "Administrator",
+ "module": "Zinple",
+ "name": "Saudization Dashboard",
+ "owner": "Administrator"
+}

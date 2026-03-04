@@ -2,7 +2,6 @@ frappe.ui.form.on('Employee', {
     refresh: function(frm) {
         check_expiry_alerts(frm);
 
-        // Route attachments to employee's folder
         if (frm.doc.name && frm.doc.employee_name) {
             frm.attachments.attachment_control.options = {
                 folder: `Home/Employee Documents/${frm.doc.name} - ${frm.doc.employee_name}`,
@@ -27,7 +26,6 @@ function check_expiry_alerts(frm) {
     let messages = [];
     let has_expired = false;
 
-    // ===== GENERIC CHECK FUNCTION =====
     function evaluate_expiry(date_value, label) {
         if (!date_value) return;
 
@@ -46,12 +44,10 @@ function check_expiry_alerts(frm) {
         }
     }
 
-    // ===== CHECK ALL DOCUMENTS =====
     evaluate_expiry(frm.doc.custom_visa_expiry_date, "Visa");
     evaluate_expiry(frm.doc.custom_iqama_expiry, "Iqama");
     evaluate_expiry(frm.doc.custom_medical_insurance_expiry, "Medical Insurance");
 
-    // ===== SHOW SINGLE POPUP =====
     if (messages.length > 0) {
         frappe.msgprint({
             title: __("Document Expiry Alert"),
