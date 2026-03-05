@@ -247,131 +247,78 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
-doc_events = {
-    "Job Applicant": {
-        "validate": "ksa_hr.job_applicant.validate_job_applicant"
-    },
-    "Employee": {
-        "after_insert": "ksa_hr.employee_folder.create_employee_folder",
-        "on_update": "ksa_hr.employee_folder.move_employee_attachments"
-    },
-    "Timesheet": {
-        "before_save": "ksa_hr.timesheet_overtime.calculate_overtime"
-    },
-    "Employee Loan": {
-        "on_submit": "ksa_hr.ksa_hr.doctype.employee_loan.employee_loan.on_submit"
-    },
-    # "Salary Slip": {
-    #     "before_save": "ksa_hr.gosi.calculate_gosi"
-    # },
-    "Appraisal": {
-        "on_submit": "ksa_hr.increment_link.apply_increment_on_submit"
-    }
-    
-}
-
-doctype_js = {
-    "Employee": "public/js/employee.js",
-        "Appraisal": "public/js/appraisal_reminder.js"
-
-}
-
 fixtures = [
-    {
-        "dt": "Custom Field",
-        "filters": [
-            ["fieldname", "in", [
-                # Employee Fields
-                "custom_ghosi_basic_salary",
-                "custom_ghosi_housing_allowance",
-                "custom_ghosi_other_allowance",
-                "custom_gosi_basic_salary",
-                "custom_gosi_housing_allowance",
-                "custom_gosi_other_allowance",
-                "custom_vacation_salary",
-                "custom_nationality_type",
-
-                # Salary Structure Assignment Fields
-                "custom_gosi",
-                "custom_gosi_amount",
-
-                # Attendance Fields
-                "custom_standard_hours",
-                "custom_overtime_hours",
-                "custom_is_ramadan",
-
-                # Timesheet OT Fields
-                "custom_total_ot_hours"
-            ]]
-        ]
-    },
-    {
-        "doctype": "Custom Field",
-        "filters": [
-            ["dt", "in", ["Employee", "Job Applicant", "Holiday"]]
-        ]
-    },
-    {
-        "doctype": "Holiday List"
-    },
-    {
-        "doctype": "DocPerm",
-        "filters": [
-            ["parent", "=", "File"]
-        ]
-    },
-    {
-        "doctype": "Employee Onboarding Template"
-    },
-    {
-        "doctype": "Print Format"
-    },
-    {
-        "doctype": "Translation"
-    },
-    {
-        "doctype": "Workflow"
-    },
-    {
-        "doctype": "Workflow State"
-    },
-    {
-        "doctype": "Workflow Action"
-    },
-    {
-        "doctype": "DocType",
-        "filters": [
-            ["name", "=", "Employee Loan"]
-        ]
-    },
-    {
-        "doctype": "DocType",
-        "filters": [
-            ["name", "=", "Loan Type"]
-        ]
-    },
-    {
-        "doctype": "Salary Component",
-        "filters": [
-            ["name", "=", "Loan Repayment"]
-        ]
-    },
-    {
-        "doctype": "Custom Field",
-        "filters": [
-            ["dt", "=", "Additional Salary"]
-        ]
-    },
-    {
-        "doctype": "Salary Component",
-        "filters": [
-            ["name", "in", ["GOSI - Employee", "GOSI - Employer"]]
-        ]
-    },
-    {
-        "doctype": "Print Format",
-        "filters": [
-            ["name", "=", "Salary Slip – KSA Bilingual"]
-        ]
-    }
+{
+"doctype": "Custom Field",
+"filters": [
+["dt", "in", [
+"Employee",
+"Salary Slip",
+"Salary Structure Assignment",
+"Attendance",
+"Timesheet",
+"Additional Salary",
+"Job Applicant",
+"Holiday"
+]]
 ]
+},
+{
+"doctype": "Holiday List"
+},
+{
+"doctype": "DocPerm",
+"filters": [
+["parent", "=", "File"]
+]
+},
+{
+"doctype": "Employee Onboarding Template"
+},
+{
+"doctype": "Print Format"
+},
+{
+"doctype": "Translation"
+},
+{
+"doctype": "Workflow"
+},
+{
+"doctype": "Workflow State"
+},
+{
+"doctype": "Workflow Action"
+},
+{
+"doctype": "DocType",
+"filters": [
+["name", "=", "Employee Loan"]
+]
+},
+{
+"doctype": "DocType",
+"filters": [
+["name", "=", "Loan Type"]
+]
+},
+{
+"doctype": "Salary Component",
+"filters": [
+["name", "=", "Loan Repayment"]
+]
+},
+{
+"doctype": "Salary Component",
+"filters": [
+["name", "in", ["GOSI - Employee", "GOSI - Employer"]]
+]
+},
+{
+"doctype": "Print Format",
+"filters": [
+["name", "=", "Salary Slip – KSA Bilingual"]
+]
+}
+]
+
