@@ -1,9 +1,17 @@
 [
  {
-  "accounts": [],
+  "accounts": [
+   {
+    "account": "Cash - ZI",
+    "company": "zinple Info",
+    "parent": "GOSI - Employer",
+    "parentfield": "accounts",
+    "parenttype": "Salary Component"
+   }
+  ],
   "amount": 0.0,
   "amount_based_on_formula": 0,
-  "condition": null,
+  "condition": "base * 0.12",
   "create_separate_payment_entry_against_benefit_claim": 0,
   "deduct_full_tax_on_selected_payroll_date": 0,
   "depends_on_payment_days": 1,
@@ -19,7 +27,7 @@
   "is_income_tax_component": 0,
   "is_tax_applicable": 0,
   "max_benefit_amount": 0.0,
-  "modified": "2026-03-02 15:21:14.810027",
+  "modified": "2026-03-05 12:07:06.420305",
   "name": "GOSI - Employer",
   "only_tax_impact": 0,
   "pay_against_benefit_claim": 0,
@@ -32,10 +40,18 @@
   "variable_based_on_taxable_salary": 0
  },
  {
-  "accounts": [],
+  "accounts": [
+   {
+    "account": "Cash - ZI",
+    "company": "zinple Info",
+    "parent": "GOSI - Employee",
+    "parentfield": "accounts",
+    "parenttype": "Salary Component"
+   }
+  ],
   "amount": 0.0,
   "amount_based_on_formula": 0,
-  "condition": null,
+  "condition": "base * 0.10",
   "create_separate_payment_entry_against_benefit_claim": 0,
   "deduct_full_tax_on_selected_payroll_date": 0,
   "depends_on_payment_days": 1,
@@ -51,7 +67,7 @@
   "is_income_tax_component": 0,
   "is_tax_applicable": 0,
   "max_benefit_amount": 0.0,
-  "modified": "2026-03-02 15:07:50.752659",
+  "modified": "2026-03-05 12:06:51.317629",
   "name": "GOSI - Employee",
   "only_tax_impact": 0,
   "pay_against_benefit_claim": 0,

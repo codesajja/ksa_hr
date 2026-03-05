@@ -247,6 +247,37 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+doc_events = {
+    "Job Applicant": {
+        "validate": "ksa_hr.job_applicant.validate_job_applicant"
+    },
+    "Employee": {
+        "after_insert": "ksa_hr.employee_folder.create_employee_folder",
+        "on_update": "ksa_hr.employee_folder.move_employee_attachments"
+    },
+    "Timesheet": {
+        "before_save": "ksa_hr.timesheet_overtime.calculate_overtime"
+    },
+    "Employee Loan": {
+        "on_submit": "ksa_hr.ksa_hr.doctype.employee_loan.employee_loan.on_submit"
+    },
+    # "Salary Slip": {
+    #     "before_save": "ksa_hr.gosi.calculate_gosi"
+    # },
+    "Appraisal": {
+        "on_submit": "ksa_hr.increment_link.apply_increment_on_submit"
+    }
+    
+}
+
+doctype_js = {
+    "Employee": "public/js/employee.js",
+        "Appraisal": "public/js/appraisal_reminder.js",
+            "Payroll Entry": "public/js/payroll_entry.js"
+
+
+}
+
 fixtures = [
 {
 "doctype": "Custom Field",
