@@ -1,0 +1,35 @@
+{
+ "cards": [
+  {
+   "card": "Overall Saudization %"
+  },
+  {
+   "card": "Saudi Employees"
+  },
+  {
+   "card": "Total Employees-1"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Saudization by Department",
+   "width": "Full"
+  },
+  {
+   "chart": "Saudization by Branch",
+   "width": "Full"
+  }
+ ],
+ "creation": "2026-03-04 17:39:10.061043",
+ "dashboard_name": "Saudization Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2026-03-05 10:39:45.762408",
+ "modified_by": "Administrator",
+ "module": "KSA HR",
+ "name": "Saudization Dashboard",
+ "owner": "Administrator"
+}
