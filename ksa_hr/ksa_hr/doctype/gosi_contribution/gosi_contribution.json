@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-05 14:33:14.445623",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_type",
+  "employee_percent",
+  "employer_percent"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Employee Type",
+   "options": "\nSaudi\nNon-Saudi"
+  },
+  {
+   "fieldname": "employee_percent",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Employee %"
+  },
+  {
+   "fieldname": "employer_percent",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Employer %"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-05 14:41:22.138905",
+ "modified_by": "Administrator",
+ "module": "KSA HR",
+ "name": "GOSI Contribution",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

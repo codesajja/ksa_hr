@@ -264,6 +264,9 @@ doc_events = {
    
     "Appraisal": {
         "on_submit": "ksa_hr.increment_link.apply_increment_on_submit"
+    },
+    "Salary Slip": {
+        "validate": "ksa_hr.gosi_calculation.calculate_gosi"
     }
     
 }
@@ -319,6 +322,7 @@ fixtures = [
 {
 "doctype": "Workflow Action"
 },
+
 {
 "doctype": "DocType",
 "filters": [
@@ -331,6 +335,20 @@ fixtures = [
 ["name", "=", "Loan Type"]
 ]
 },
+
+{
+"doctype": "DocType",
+"filters": [
+["name", "=", "GOSI Settings"]
+]
+},
+{
+"doctype": "DocType",
+"filters": [
+["name", "=", "GOSI Contribution"]
+]
+},
+
 {
 "doctype": "Salary Component",
 "filters": [
@@ -343,6 +361,7 @@ fixtures = [
 ["name", "in", ["GOSI - Employee", "GOSI - Employer"]]
 ]
 },
+
 {
 "doctype": "Print Format",
 "filters": [
