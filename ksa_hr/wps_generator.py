@@ -2,49 +2,41 @@ import frappe
 import csv
 from io import StringIO
 
-
 @frappe.whitelist()
 def generate_wps_file(payroll_entry):
 
     payroll = frappe.get_doc("Payroll Entry", payroll_entry)
+    company = frappe.get_doc("Company", payroll.company)
 
     output = StringIO()
     writer = csv.writer(output)
 
-    # CSV Header
     writer.writerow([
         "Employee ID",
-        "Employee Name",
-        "IBAN",
-        "Gross Salary",
-        "Total Deduction",
+        "Bank Account",
+        "Iqama No",
         "Net Salary",
-        "Payment Date"
+        "Payment Date",
+        "Employer ID"
     ])
 
     salary_slips = frappe.get_all(
         "Salary Slip",
         filters={"payroll_entry": payroll_entry},
-        fields=[
-            "employee",
-            "employee_name",
-            "bank_account_no",
-            "gross_pay",
-            "total_deduction",
-            "net_pay"
-        ]
+        fields=["employee","bank_account_no","net_pay"]
     )
 
     for slip in salary_slips:
 
+        employee = frappe.get_doc("Employee", slip.employee)
+
         writer.writerow([
             slip.employee,
-            slip.employee_name,
             slip.bank_account_no,
-            slip.gross_pay,
-            slip.total_deduction,
+            employee.custom_iqama_no,
             slip.net_pay,
-            payroll.posting_date
+            payroll.posting_date,
+            company.tax_id
         ])
 
     frappe.response["filename"] = "wps_salary.csv"

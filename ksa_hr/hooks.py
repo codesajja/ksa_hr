@@ -261,9 +261,7 @@ doc_events = {
     "Employee Loan": {
         "on_submit": "ksa_hr.ksa_hr.doctype.employee_loan.employee_loan.on_submit"
     },
-    # "Salary Slip": {
-    #     "before_save": "ksa_hr.gosi.calculate_gosi"
-    # },
+   
     "Appraisal": {
         "on_submit": "ksa_hr.increment_link.apply_increment_on_submit"
     }
