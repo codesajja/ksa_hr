@@ -12,25 +12,29 @@ def calculate_gosi(doc, method):
     employee_percent = 0
     employer_percent = 0
 
-    # Find correct percentage from table
+    # Find correct percentage from settings table
     for row in settings.gosi_table:
         if row.employee_type == doc.custom_nationality_type:
             employee_percent = row.employee_percent
             employer_percent = row.employer_percent
             break
 
-    # Get Basic salary from earnings
-    basic = 0
+    # Components that should NOT be included in GOSI calculation
+    exclude_components = [
+        "EOS Benefit",
+        "Leave Encashment"
+    ]
+
+    # Calculate GOSI base from earnings
+    gosi_base = 0
     for earning in doc.earnings:
-        if earning.salary_component == "Basic":
-            basic = earning.amount
-            break
+        if earning.salary_component not in exclude_components:
+            gosi_base += earning.amount
 
-    # Calculate GOSI
-    employee_gosi = basic * employee_percent / 100
-    employer_gosi = basic * employer_percent / 100
+    # Calculate GOSI amounts
+    employee_gosi = gosi_base * employee_percent / 100
+    employer_gosi = gosi_base * employer_percent / 100
 
-    # Flags to check if rows exist
     employee_found = False
     employer_found = False
 

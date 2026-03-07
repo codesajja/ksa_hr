@@ -262,11 +262,17 @@ doc_events = {
         "on_submit": "ksa_hr.ksa_hr.doctype.employee_loan.employee_loan.on_submit"
     },
    
-    "Appraisal": {
-        "on_submit": "ksa_hr.increment_link.apply_increment_on_submit"
-    },
+    # "Appraisal": {
+    #     "on_submit": "ksa_hr.increment_link.apply_increment_on_submit"
+    # },
     "Salary Slip": {
-        "validate": "ksa_hr.gosi_calculation.calculate_gosi"
+        "validate": [
+            "ksa_hr.gosi_calculation.calculate_gosi",
+            "ksa_hr.final_settlement.calculate_final_settlement"
+        ]
+    },
+    "Attendance": {
+        "before_save": "ksa_hr.attendance.calculate_attendance_overtime"
     }
     
 }
@@ -320,7 +326,7 @@ fixtures = [
 "doctype": "Workflow State"
 },
 {
-"doctype": "Workflow Action"
+"doctype": "Workflow Action Master"
 },
 
 {
@@ -352,21 +358,23 @@ fixtures = [
 {
 "doctype": "Salary Component",
 "filters": [
-["name", "=", "Loan Repayment"]
-]
-},
-{
-"doctype": "Salary Component",
-"filters": [
-["name", "in", ["GOSI - Employee", "GOSI - Employer"]]
+["name", "in", [
+"GOSI - Employee",
+"GOSI - Employer",
+"EOS Benefit",
+"Leave Encashment"
+]]
 ]
 },
 
 {
 "doctype": "Print Format",
 "filters": [
-["name", "=", "Salary Slip – KSA Bilingual"]
+["name", "in", [
+"Employee Arabic Bilingual",
+"Final Settlement Payslip",
+"Salary Slip – KSA Bilingual"
+]]
 ]
 }
 ]
-
