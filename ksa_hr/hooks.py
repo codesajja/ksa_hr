@@ -301,30 +301,34 @@ fixtures = [
 ]]
 ]
 },
+
 {
 "doctype": "Holiday List"
 },
+
 {
 "doctype": "DocPerm",
 "filters": [
 ["parent", "=", "File"]
 ]
 },
+
 {
 "doctype": "Employee Onboarding Template"
 },
-{
-"doctype": "Print Format"
-},
+
 {
 "doctype": "Translation"
 },
+
 {
 "doctype": "Workflow"
 },
+
 {
 "doctype": "Workflow State"
 },
+
 {
 "doctype": "Workflow Action Master"
 },
@@ -332,26 +336,12 @@ fixtures = [
 {
 "doctype": "DocType",
 "filters": [
-["name", "=", "Employee Loan"]
-]
-},
-{
-"doctype": "DocType",
-"filters": [
-["name", "=", "Loan Type"]
-]
-},
-
-{
-"doctype": "DocType",
-"filters": [
-["name", "=", "GOSI Settings"]
-]
-},
-{
-"doctype": "DocType",
-"filters": [
-["name", "=", "GOSI Contribution"]
+["name", "in", [
+"Employee Loan",
+"Loan Type",
+"GOSI Settings",
+"GOSI Contribution"
+]]
 ]
 },
 
