@@ -297,7 +297,8 @@ fixtures = [
 "Timesheet",
 "Additional Salary",
 "Job Applicant",
-"Holiday"
+"Holiday",
+"Holiday List"
 ]]
 ]
 },
