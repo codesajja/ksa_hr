@@ -340,7 +340,9 @@ fixtures = [
 "Employee Loan",
 "Loan Type",
 "GOSI Settings",
-"GOSI Contribution"
+"GOSI Contribution",
+"End of Service Settlement",
+"Employment Contract"
 ]]
 ]
 },
