@@ -285,89 +285,87 @@ doctype_js = {
 
 }
 
+
+
 fixtures = [
-{
-"doctype": "Custom Field",
-"filters": [
-["dt", "in", [
-"Employee",
-"Salary Slip",
-"Salary Structure Assignment",
-"Attendance",
-"Timesheet",
-"Additional Salary",
-"Job Applicant",
-"Holiday",
-"Holiday List"
-]]
-]
-},
-
-{
-"doctype": "Holiday List"
-},
-
-{
-"doctype": "DocPerm",
-"filters": [
-["parent", "=", "File"]
-]
-},
-
-{
-"doctype": "Employee Onboarding Template"
-},
-
-{
-"doctype": "Translation"
-},
-
-{
-"doctype": "Workflow"
-},
-
-{
-"doctype": "Workflow State"
-},
-
-{
-"doctype": "Workflow Action Master"
-},
-
-{
-"doctype": "DocType",
-"filters": [
-["name", "in", [
-"Employee Loan",
-"Loan Type",
-"GOSI Settings",
-"GOSI Contribution",
-"End of Service Settlement",
-"Employment Contract"
-]]
-]
-},
-
-{
-"doctype": "Salary Component",
-"filters": [
-["name", "in", [
-"GOSI - Employee",
-"GOSI - Employer",
-"EOS Benefit",
-"Leave Encashment"
-]]
-]
-},
-
-{
-"doctype": "Print Format",
-"filters": [
-["name", "in", [
-"Employee Arabic Bilingual",
-"Final Settlement Payslip",
-"Salary Slip – KSA Bilingual"
-]]
-]
-}
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["dt", "in", [
+                "Employee",
+                "Salary Slip",
+                "Salary Structure Assignment",
+                "Attendance",
+                "Timesheet",
+                "Additional Salary",
+                "Job Applicant",
+                "Holiday",
+                "Holiday List"
+            ]]
+        ]
+    },
+    {
+        "doctype": "Holiday List"
+    },
+    {
+        "doctype": "DocPerm",
+        "filters": [
+            ["parent", "=", "File"]
+        ]
+    },
+    {
+        "doctype": "Employee Onboarding Template"
+    },
+    {
+        "doctype": "Translation"
+    },
+    {
+        "doctype": "Workflow"
+    },
+    {
+        "doctype": "Workflow State"
+    },
+    {
+        "doctype": "Workflow Action Master"
+    },
+    {
+        "doctype": "DocType",
+        "filters": [
+            ["name", "in", [
+                "Employee Loan",
+                "Loan Type",
+                "GOSI Settings",
+                "GOSI Contribution",
+                "End of Service Settlement",
+                "Employment Contract"
+            ]]
+        ]
+    },
+    {
+        "doctype": "Salary Component",
+        "filters": [
+            ["name", "in", [
+                "GOSI - Employee",
+                "GOSI - Employer",
+                "EOS Benefit",
+                "Leave Encashment"
+            ]]
+        ]
+    },
+    {
+        "doctype": "Leave Type",
+        "filters": [
+            ["name", "in", ["Annual Leave"]]
+        ]
+    },
+    {
+        "doctype": "Print Format",
+        "filters": [
+            ["name", "in", [
+                "Employee Arabic Bilingual",
+                "Final Settlement Payslip",
+                "Salary Slip – KSA Bilingual"
+            ]]
+        ]
+    }
 ]
