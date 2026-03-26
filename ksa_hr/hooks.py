@@ -280,7 +280,8 @@ doc_events = {
 doctype_js = {
     "Employee": "public/js/employee.js",
         "Appraisal": "public/js/appraisal_reminder.js",
-            "Payroll Entry": "public/js/payroll_entry.js"
+            "Payroll Entry": "public/js/payroll_entry.js",
+            "BOM": "public/js/bom_cost_sheet.js"
 
 
 }
@@ -300,7 +301,8 @@ fixtures = [
                 "Additional Salary",
                 "Job Applicant",
                 "Holiday",
-                "Holiday List"
+                "Holiday List",
+                "BOM"
             ]]
         ]
     },
